@@ -1,0 +1,140 @@
+/* Ajuste de introducción y centrado para "Sobre Nosotros" */
+.about-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+    margin-top: 40px;
+}
+
+.about-intro h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-intro p {
+    max-width: 800px; /* Limita el ancho del texto */
+    color: #555;
+    font-size: 1em;
+}
+
+/* Ajuste de imágenes de introducción */
+.about-intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Borde redondeado */
+    transition: transform 0.3s ease; /* Transición para animación */
+}
+
+.about-intro img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+/* Ajuste de imágenes en Misión y Visión */
+.mission-vision-container img {
+    width: 100%;
+    max-width: 300px; /* Limita el ancho en dispositivos grandes */
+    height: auto;
+    border-radius: 15px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición para animación */
+}
+
+.mission-vision-container img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+/* Contenedor principal de Misión y Visión */
+.mission-vision-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+/* Ajuste de sección individual de Misión y Visión */
+.about-section {
+    text-align: center;
+    width: 300px;
+}
+
+/* Otros estilos para mantener la apariencia del texto */
+.about-section h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Valores */
+.values-section {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+}
+
+.values-section h3 {
+    font-size: 1.6em;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.values-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values-section ul li {
+    font-size: 1em;
+    padding: 5px 0;
+}
+
+/* Responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .mission-vision-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul li {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}

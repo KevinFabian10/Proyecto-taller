@@ -1,0 +1,245 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #e0f7ff; /* Fondo azul claro */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Sección de bienvenida */
+.welcome-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.welcome-section h2 {
+    color: #007bff;
+}
+
+.welcome-section p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-image {
+    width: 70%; /* Ajusta el tamaño de la imagen en pantallas grandes */
+    max-width: 400px; /* Tamaño máximo de la imagen */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Estilos responsivos para la imagen de bienvenida */
+@media (max-width: 768px) {
+    .main-image {
+        width: 80%; /* Ajuste para tablets */
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-image {
+        width: 90%; /* Ajuste para pantallas de teléfono */
+        max-width: 250px;
+    }
+}
+
+/* Sección de beneficios */
+.benefits-section {
+    padding: 20px;
+    background-color: #e0f7ff; /* Fondo alterno azul claro */
+}
+
+.benefits-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.benefits-list li {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-list li img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-section h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    color: #f0f0f0;
+    font-size: 14px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 8px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+/* Responsividad del pie de página */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .benefits-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits-list li {
+        width: 80%;
+    }
+
+    .slider {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .slider {
+        height: 150px;
+    }
+}
